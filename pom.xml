@@ -6,8 +6,8 @@
 	<name>alta-commons</name>
 	<groupId>com.alta189</groupId>
 	<artifactId>commons</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
-	<url>http://github.com/alta189/DeskBin</url>
+	<version>1.0.0</version>
+	<url>http://github.com/alta189/alta-commons</url>
 	<inceptionYear>2012</inceptionYear>
 
 	<properties>
@@ -101,46 +101,6 @@
 					<showWarnings>true</showWarnings>
 					<showDeprecation>true</showDeprecation>
 				</configuration>
-			</plugin>
-			<!-- JAR dependency addition plugin -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-shade-plugin</artifactId>
-				<version>1.6</version>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>shade</goal>
-						</goals>
-						<configuration>
-							<filters>
-								<filter>
-									<artifact>*:*</artifact>
-									<excludes>
-										<exclude>lib/**</exclude>
-										<exclude>templates/**</exclude>
-										<exclude>META-INF/*.xml</exclude>
-										<exclude>META-INF/*.txt</exclude>
-										<exclude>META-INF/*.SF</exclude>
-										<exclude>META-INF/*.DSA</exclude>
-										<exclude>META-INF/*.RSA</exclude>
-										<exclude>**/LICENSE</exclude>
-										<exclude>**/NOTICE</exclude>
-										<exclude>**/DEPENDENCIES</exclude>
-										<exclude>**/*.java</exclude>
-									</excludes>
-								</filter>
-								<filter>
-									<artifact>com.alta189:*</artifact>
-									<includes>
-										<include>**</include>
-									</includes>
-								</filter>
-							</filters>
-						</configuration>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
