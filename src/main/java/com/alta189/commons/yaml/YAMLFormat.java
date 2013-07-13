@@ -1,7 +1,7 @@
 /*
  * This file is part of alta-commons.
  *
- * Copyright (c) 2012, alta189 <http://github.com/alta189/DeskBin/>
+ * Copyright (c) 2012, alta189 <http://github.com/alta189/alta-commons/>
  * alta-commons is licensed under the GNU Lesser General Public License.
  *
  * alta-commons is free software: you can redistribute it and/or modify
