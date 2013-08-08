@@ -45,6 +45,7 @@
 		<url>https://github.com/alta189/alta-commons/issues</url>
 	</issueManagement>
 
+	<!-- Distribution Management -->
 	<distributionManagement>
 		<!-- Publish versioned releases here -->
 		<repository>
